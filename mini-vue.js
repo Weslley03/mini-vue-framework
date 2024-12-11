@@ -1,4 +1,4 @@
-import { reactive, watchEffect } from "./reactivity";
+import { reactive, watchEffect } from "./reactivity.js";
 
 export function createApp({ data, template, methods }) {
   const state = reactive(data());
