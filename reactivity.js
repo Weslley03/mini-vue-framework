@@ -7,7 +7,7 @@ export function reactive(obj) {
   };
 
   const notify = (key) => {
-    depend.get(key).forEach(effect => effect());
+    deps.get(key).forEach(effect => effect());
   };
 
   return new Proxy(obj, {
